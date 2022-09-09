@@ -186,5 +186,98 @@ public class Assignment {
         square=a*a;
         System.out.println(square);
          */
+
+
+// Operators
+
+// Assignment 1 (length and breadth of a rectangle are 5 and 7 respectively)
+       /*
+        int length=5;
+        int breadth=7;
+        int  area;
+        area=length*breadth;
+        System.out.println(area);
+        */
+
+
+// Assignment 1.1 (Write a program to calculate  the area and perimeter of the rectangle)
+        /*
+        double length=5;
+        double breadth=6;
+        double area=length*breadth;
+        double perimeter=2*(length+breadth);
+        System.out.println(area);
+        System.out.println(perimeter);
+         */
+
+// Assignment 2 (Write a program to calculate the perimeter of a triangle having sides of length having sides of a length 2,3 and 5 units)
+       /*
+        int a=2;
+        int b=3;
+        int c=5;
+        int perimeter=a+b+c;
+        System.out.println(perimeter);
+        */
+
+// Assignment 3 (Write a program to add 8 to the number 2345 and then divide by 3)
+      /*
+        int a=8;
+        float b=2345;
+        float add=a+b;
+        float divide=add/3;
+        System.out.println(add);
+        System.out.println(divide);
+
+       */
+
+
+// Assignment 3.1 (Now the modulus of the quotient is taken with 5 and then multiply the resultant value by 5 )
+
+        //System.out.println( (float) (((8+2345)/3)%5)*5);
+
+// Assignment 4 (Solve the above question  using assignment operator (eg. +=,-=,*=))
+// Assignment 5 (write a program to check if the two number 23 and 45 are equal )
+
+        //System.out.println(23 == 45);
+
+// Assignment 6 (Write a program to print power of  7 raised to 5)
+
+        //System.out.println((float) 7*7*7*7*7);
+
+// Assignment 7 (Assign values of variable 'a' and 'b' as 55 and 70 respectively and then check if both the condition 'a<50' and 'a<b' are true)
+        /*
+        int a=50;
+        int b=77;
+        System.out.println( a<50 && a<b);
+
+         */
+
+// Assignment 8 (Now solve the above question (Assignment 7) to check if at least one of the condition 'a<50' or 'a<b' is true)
+
+        /*
+        int a=50;
+        int b=77;
+        System.out.println(a<50 || a<b);
+         */
+
+// assignment 9 (If the marks of robert in three subjects are 78,45 and 62 respectively (each out of 100). write a program to calculate his total marks and percentage marks)
+/*
+        int sub1=78;
+        int sub2=45;
+        int sub3=62;
+        float totalMark=sub1+sub2+sub3;
+        float percentage=totalMark/300*100f;
+        System.out.println(totalMark);
+        System.out.println(percentage);
+ */
+
+//
+
+
+
+
+
+
+
     }
 }

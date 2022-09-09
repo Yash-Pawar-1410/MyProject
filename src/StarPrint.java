@@ -47,7 +47,9 @@ public class StarPrint {
 
 // Right down triangle star pattern
 
+        /*
         int i,j,k, row=4;
+
         for (i=row; i>=1; i--)
         {
             for (j=row; j>i; j--)
@@ -60,6 +62,8 @@ public class StarPrint {
             }
             System.out.println("");
         }
+
+         */
 
 // Pyramid star pattern
 
