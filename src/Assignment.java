@@ -80,7 +80,6 @@ public class Assignment {
          */
 
 
-
 // Assignment 4 (Write a program to print the sum of the numbers 2,4 and 5)
       /*
         int a=2;
@@ -271,7 +270,353 @@ public class Assignment {
         System.out.println(percentage);
  */
 
-//
+// Assignment 10 (Suppose the value if variable 'a' and 'b' are 6 and 8 respectively, Write two programs to swap the values of the two variables)
+
+  // 1 ) first program by using a third variable
+
+       /*
+        int a=6;
+        int b=8;
+        int c=0;
+        c=a;
+        a=b;
+        b=c;
+
+        System.out.println("the value of a is");
+        System.out.println(a);
+        System.out.println("the value of b is");
+        System.out.println(b);
+
+        */
+
+
+
+// 2)  second program without using any variable
+/*
+        int a=6;
+        int b=8;
+        b=b-a;
+        a=b+a;
+        b=-(b-a);
+        System.out.println("the value of a is ");
+        System.out.println(a);
+        System.out.println("the value of b is ");
+        System.out.println(b);
+
+ */
+
+
+
+// Assignment 11 (Write the program to convert fahrenheit into celsius)
+/*
+        float f=50;
+        float celsius;
+        celsius=(float) (f-32)*5/9;
+        System.out.println(celsius);
+         */
+
+
+// Assignment 12 (The total number of student in a class are 90 out of which 45 are boys. if 50% of the total students secured grade 'a' out of which 20 are boys,
+// then write a program to calculate the total number of girls getting grade 'a' )
+
+       /*
+        int total = 90;
+
+        int boys =45;
+        int AGradeBoys=20;
+        int Girls=90-boys;
+        int AGradeStud = (50*total)/100;
+        System.out.println("Total girls are");
+        System.out.println(Girls);
+        System.out.println("Total number of students who secured 'A' Grade");
+        System.out.println(AGradeStud);
+        System.out.println("Total number of girls who secured 'A' Grade");
+        System.out.println(AGradeStud-AGradeBoys);
+  */
+
+
+
+
+
+
+//Assignment 13 (write the program to calculate the sum of the first and the second last digit of a 5 digit
+// Example :- number 12345 Output :- 1+4=5)
+
+
+
+
+// Assignment 14 (Take a 4-digit number. write a program to display a number whose digits are grater than the corresponding digits of the number taken
+// Example if the number which was taken is 5696 then the displayed number should be 7819)
+
+
+
+
+// Assignment 15 (Write the program to calculate the sum of the digit of a 3-digit number
+// Example number :- 123 Output :- 6)
+
+
+
+
+
+
+
+
+// Assignment 16 (Write a program to reverse  a 3-digit number
+// Example number 123 Output :- 321)
+
+   /*
+    int num=123, rev=0;
+
+    while (num!=0)
+    {
+        int rem = num % 10;
+        rev= rev * 10 + rem;
+        num= num / 10;
+    }
+        System.out.println("The reverse order of the number is" +rev);
+
+    */
+
+
+
+
+
+// IF else
+
+// Assignment 1 (take values of length and breadth of a rectangle from user and check if it is square or  not)
+
+      /*
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the length ");
+        length=sc.nextInt();
+        System.out.println("Enter the breadth ");
+        breadth= sc.nextInt();
+        if (length==breadth)
+        {
+            System.out.println("it is a square");
+        }
+        else {
+            System.out.println("it is not square");
+        }
+*/
+
+
+// Assignment 2 (Take two int value from user and print greatest among them)
+
+        /*
+        int a,b;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the first number");
+        a= sc.nextInt();
+        System.out.println("Enter the second number");
+        b=sc.nextInt();
+        if (a>b){
+            System.out.println("Greatest number is " +a);
+
+        } else if (a<b) {
+            System.out.println("Greatest number is"+b);
+
+        } else {
+            System.out.println("both are equal number");
+        }
+
+         */
+
+
+
+
+
+// Assignment 3 (A shop will give discount of 10% if the cost of purchased quality is more than 1000 ask user for quantity suppose one unit will cost
+// 100 judge and print total cost for user)
+
+/*
+        int Quantity;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the quantity");
+        Quantity= sc.nextInt();
+        if (Quantity*100>10000)
+        {
+
+            System.out.println((Quantity*100)-((Quantity/100)*100));
+            System.out.println("cost is");
+        }
+        else {
+            System.out.println("cost is"+ Quantity*100);
+        }
+
+ */
+
+// Assignment 4 (A company decided  to give bonus of 5% to employee if his/her year of service more than 5 years
+// ask user for their salary and year of service and print the net bonus)
+
+     /*
+        int salary;
+        int service;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the service in year");
+        service =sc.nextInt();
+        System.out.println("Enter the salary");
+        salary = sc.nextInt();
+        if (service>5)
+        {
+            System.out.println("Your service is above 5 year so you get 5% bonus, So now your total salary is");
+            System.out.println((salary)+((5*salary)/100))
+        }
+        else {
+            System.out.println("Sorry you are not eligible fo bonus because your service less than 5, So your salary is ");
+            System.out.println(salary);
+        }
+
+      */
+
+// Assignment 5 (A school has the  following rules for grading system
+// a. below 25-F
+// b. 25 to 45-E
+// c. 45 to 50-D
+// d. 50 to 60-C
+// e. 60 to 80-B
+// f. above 80-A
+// ask user to enter marks and print the corresponding grade)
+
+       /*
+        int marks;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the marks");
+        marks= sc.nextInt();
+
+        if (marks<25){
+            System.out.println("F");
+        } else if (marks<=45) {
+            System.out.println("E");
+        }
+        else if (marks<=50) {
+            System.out.println("D");
+        }
+        else if (marks<=60) {
+            System.out.println("C");
+        }
+        else if (marks<=80) {
+            System.out.println("B");
+        }
+        else if (marks<=100) {
+            System.out.println("A");
+        }
+        else {
+            System.out.println("visit your teacher");
+        }
+
+        */
+
+// Assignment 6 (Take input of age of 3 people by user and determine oldest and youngest among them)
+        /*
+        int age1;
+        int age2;
+        int age3;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the three ages");
+        age1= sc.nextInt();
+        age2= sc.nextInt();
+        age3= sc.nextInt();
+        if (age1<age2 && age1 < age3)
+        {
+            System.out.println("the youngest is"+age1);
+        } else if (  age2<age3) {
+            System.out.println("the youngest is"+age2);
+        }
+        else {
+            System.out.println("the youngest is"+age3);
+        }
+         if (age1>age2 && age1>age3){
+             System.out.println("Oldest is");
+         }
+         else if ( age2>age3) {
+             System.out.println("the Oldest is"+age2);
+         }
+         else {
+             System.out.println("the Oldest is"+age3);
+         }
+
+         */
+
+
+// Assignment 7 (Write a program to print absolute values of a number entered by user
+// input 1   output  1
+// input -1  output 1)
+        /*
+        int num;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        num=sc.nextInt();
+        if (num<0){
+            System.out.println(num*-1);
+        }
+        else {
+            System.out.println(num);
+        }
+        */
+
+// Assignment 8 (A student will not be allowed to sit in exam if his/her attendance is less than 75%, take the user input from user number of classes held , number of classes
+// attended and print percentage of class attended is student is allowed to sit in exam or not)
+       /*
+        int classes;
+        int attend;
+        float attended;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Number of the classes held");
+        classes= sc.nextInt();
+        System.out.println("Number of attendance");
+        attend= sc.nextInt();
+        attended = ((attend)/(float)(classes)*100);
+        if (attended>=75){
+            System.out.println("You allow to sit in exam");
+        }
+        else {
+            System.out.println("you are not allow to sit");
+        }
+
+        */
+
+// Assignment 9 (Modify the above question to allow student to sit  if he/she has medical cause. Ask user if he/she has medical cause  or not ('Y' or 'N' ) and print accordingly
+
+        int classes;
+        int attend;
+        float attended;
+
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Number of the classes held");
+        classes= sc.nextInt();
+        System.out.println("Number of attendance");
+        attend= sc.nextInt();
+        attended = ((attend)/(float)(classes)*100);
+
+
+        if (attended>=75){
+            System.out.println("You allow to sit in exam");
+        }
+        else {
+            System.out.println("you are not allow to sit");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -280,4 +625,5 @@ public class Assignment {
 
 
     }
+
 }
