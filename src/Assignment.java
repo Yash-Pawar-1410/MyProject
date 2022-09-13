@@ -334,25 +334,63 @@ public class Assignment {
         System.out.println(AGradeStud-AGradeBoys);
   */
 
-
-
-
-
-
 //Assignment 13 (write the program to calculate the sum of the first and the second last digit of a 5 digit
 // Example :- number 12345 Output :- 1+4=5)
+ /*
+        int number= 12345;
+        int sum=0;
+        int digit=number%10; //5
+        number=number/10;    //1234
+
+        digit=number%10;  //4
+        sum=sum+digit;
+
+        digit=number%10;  //4
+        number=number/10;  //123
+
+        digit=number%10;   //3
+        number=number/10;   //12
+
+        digit=number%10;  //2
+        number=number/10; //1
+
+        digit=number%10;  //1
+        number=number/10;  //0
+
+        sum=sum+digit;
+        System.out.println("sum of the first and the second last digit is  " +sum);
+*/
 
 
 
 
 // Assignment 14 (Take a 4-digit number. write a program to display a number whose digits are grater than the corresponding digits of the number taken
-// Example if the number which was taken is 5696 then the displayed number should be 7819)
+// Example if the number which was taken is 5696 then the displayed number should be 7818)
+
 
 
 
 
 // Assignment 15 (Write the program to calculate the sum of the digit of a 3-digit number
 // Example number :- 123 Output :- 6)
+/*
+        int num =123;
+        int sum;
+
+        int digit1=num%10;
+        num=num/10;
+
+        int digit2=num%10;
+        num=num/10;
+
+        int digit3=num%10;
+
+        sum=digit1+digit2+digit3;
+        System.out.println(sum);
+
+ */
+
+
 
 
 
@@ -363,6 +401,25 @@ public class Assignment {
 
 // Assignment 16 (Write a program to reverse  a 3-digit number
 // Example number 123 Output :- 321)
+/*
+        int num=123;
+
+        int digit=num%10;
+        num=num/10;
+
+        int digit1=num%10;
+        num=num/10;
+
+        int digit2=num%10;
+        num=num/10;
+
+        System.out.print(digit);
+        System.out.print(digit1);
+        System.out.print(digit2);
+
+ */
+
+
 
    /*
     int num=123, rev=0;
@@ -572,48 +629,126 @@ public class Assignment {
             System.out.println("You allow to sit in exam");
         }
         else {
-            System.out.println("you are not allow to sit");
+            System.out.println("you are not allow to sit in exam");
         }
 
         */
 
 // Assignment 9 (Modify the above question to allow student to sit  if he/she has medical cause. Ask user if he/she has medical cause  or not ('Y' or 'N' ) and print accordingly
-
+/*
         int classes;
         int attend;
         float attended;
+        char medical;
 
         Scanner sc =new Scanner(System.in);
+
         System.out.println("Number of the classes held");
         classes= sc.nextInt();
-        System.out.println("Number of attendance");
+        System.out.println("Number of the attendance");
         attend= sc.nextInt();
         attended = ((attend)/(float)(classes)*100);
+        System.out.println("If medical cause type y otherwise type n");
+        medical= sc.next().charAt(0);
 
-
-        if (attended>=75){
+        if (attended>=75) {
             System.out.println("You allow to sit in exam");
+        } else if (medical=='y') {
+            System.out.println("you are allow to sit in exam");
+        } else {
+            System.out.println("you are not allow to sit in exam");
+        }
+        */
+
+
+ // Assignment 10
+        /*
+        int x=2;
+        int y=5;
+        int z=0;
+        if (x==2){
+            System.out.println("true");
         }
         else {
-            System.out.println("you are not allow to sit");
+            System.out.println("false");
+        }
+        if (x!=5){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+        if (x!=5 && y>=5){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+        if (z!=0 || x==2){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+        if (!(y<10)){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
         }
 
+         */
+
+//Assignment 11 (Write a program to check if a year is leaf year or not
+// If a year is divisible by 4 then it is leaf year like 2000,1900,2100 then it must be divisible by 400)
+        /*
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the year  ");
+        int year;
+        year= sc.nextInt();
+        if (year% 400==0 || (year%100 !=0 && year%4==0)){
+            System.out.println("this is a leaf year  ");
+        }
+        else {
+            System.out.println("this is not a leaf year  ");
+        }
+
+         */
 
 
+// Assignment 12 (Ask user to enter age, sex, marital status and then using the following  rules print their place of the service
+// if employee is female then she will work only in urban areas
+// if employee is a male and age is in between 20 and 40 then he may work in anywhere
+// if employee is a male and age is in between 40 and 60 then he will work in urban areas only
+// and any other input of age should print "ERROR")
 
 
+        /*
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter your age ");
+        int age ;
+        age = sc.nextInt();
+        System.out.println("Enter your sex 'M' or 'F' ");
+        char sex;
+        sex = sc.next().charAt(0);
+        System.out.println("Enter your marital status 'Y' or 'N' ");
+        char marital_status;
+        marital_status = sc.next().charAt(0);
+        if (sex=='F'){
+            System.out.println("Employee sex is female you will work only in urban area");
+        } else if (sex=='M' && (age>20 && age<40)) {
+            System.out.println("Employee sex is male you will work in anywhere");
+        } else if (sex=='M' && (age>40 && age<60)) {
+            System.out.println("Employee sex is male you will work in in urban area only");
+        }
+        else {
+            System.out.println("Error");
+        }
+
+         */
 
 
-
-
-
-
-
-
-
-
-
-
+// Assignment
 
 
 
