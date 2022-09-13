@@ -321,7 +321,6 @@ public class Assignment {
 
        /*
         int total = 90;
-
         int boys =45;
         int AGradeBoys=20;
         int Girls=90-boys;
@@ -390,15 +389,6 @@ public class Assignment {
 
  */
 
-
-
-
-
-
-
-
-
-
 // Assignment 16 (Write a program to reverse  a 3-digit number
 // Example number 123 Output :- 321)
 /*
@@ -433,6 +423,76 @@ public class Assignment {
         System.out.println("The reverse order of the number is" +rev);
 
     */
+
+
+//UserInput
+
+// Assignment 1 (Write a program to take two integer inputs from user and print sum and product of them)
+          /*
+            Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the first number ");
+        int a;
+        a= sc.nextInt();
+        System.out.println("Enter the second number ");
+        int b;
+        b= sc.nextInt();
+        int sum=a+b;
+        int product=a*b;
+        System.out.println("sum of the two number is  ");
+        System.out.println(sum);
+        System.out.println("product of the two number is  ");
+        System.out.println(product);
+
+           */
+
+// Assignment 2 (Take two integer inputs from user
+// first calculate the sum of two then product of two
+// finally print the sum and product of both obtained results)
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the first number ");
+        int a;
+        a=sc.nextInt();
+        System.out.println("enter the second number ");
+        int b;
+        b= sc.nextInt();
+        int sum=a+b;
+        int product=a*b;
+        int add=sum+product;
+        System.out.println("sum of two number is  " +sum);
+        System.out.println("product of number is  " +product);
+        System.out.println("addition of sum and product is "+add);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -748,7 +808,35 @@ public class Assignment {
          */
 
 
-// Assignment
+// Assignment 13 (A 4-digit number is entered through keyboard. Write a program to print a new number with digits reversed as of original one)
+
+
+        /*
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter four digit number");
+        int num;
+        num= sc.nextInt();
+
+        int digit=num%10;
+        num=num/10;
+
+        int digit1=num%10;
+        num=num/10;
+
+        int digit2=num%10;
+        num=num/10;
+
+        int digit3=num%10;
+        num=num/10;
+
+        System.out.print(digit);
+        System.out.print(digit1);
+        System.out.print(digit2);
+        System.out.print(digit3);
+
+         */
+
+
 
 
 
