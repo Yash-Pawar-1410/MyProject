@@ -1,5 +1,6 @@
 import java.*;
 import java.util.Scanner;
+
 public class MyProgram {
     public static void main(String[] args) {
 
@@ -119,7 +120,7 @@ public class MyProgram {
 // STRING METHODS
 
 
-        String name="Yash Pawar";
+        // String name="Yash Pawar";
         //System.out.println(name.length());              // 10
         //System.out.println(name.toLowerCase());         //yash pawar
         //System.out.println(name.toUpperCase());         //YASH PAWAR
@@ -140,6 +141,110 @@ public class MyProgram {
         //System.out.println(name.equals("Yash"));                   // it gives false
         //System.out.println(name.equalsIgnoreCase("Yash Pawar"));  //true
 
+
+// "+" operator perform addition and string concatenation
+/*
+        System.out.println(50+10);
+        System.out.println(5.25+25);
+        System.out.println(15.10+40.10);
+        System.out.println(5+'a');
+        System.out.println('A'+'a');
+        System.out.println(10+"string");
+        System.out.println(10+20+30+"string");
+        System.out.println("string"+20+30+30);
+        System.out.println("string"+20);
+        System.out.println('a'+"string");
+        System.out.println("string"+'A');
+        System.out.println("string"+"String");
+
+ */
+// Data type
+
+// Byte data type
+        /*
+        byte a = (byte) 128;  // data loss take place in these
+        System.out.println("if we enter value above the max (by using casting it starts checking number from min value) ");
+        System.out.println(a);
+        System.out.println("minimum value of byte is ");  // -128
+        System.out.println(Byte.MIN_VALUE);
+        System.out.println("maximum value of byte is ");  //127
+        System.out.println(Byte.MAX_VALUE);
+         */
+
+// Short data type
+        /*
+        short a=(short)32768; // data loss take place in this
+        System.out.println("if we enter value above the max (by using casting it starts checking number from min value) ");
+        System.out.println(a);
+        System.out.println("minimum value is ");  // -32768
+        System.out.println(Short.MIN_VALUE);
+        System.out.println("maximum value is ");  // 32767
+        System.out.println(Short.MAX_VALUE);
+         */
+
+   // Int data type
+        /*
+        int a= 2147483647;  // after increase 1 digit it gives error integer number too long
+        System.out.println("after increase 1 digit it gives error integer number too long cz the maximum value of int is ");
+        System.out.println(a);
+        System.out.println("minimum value is" );  // -2147483648
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println("maximum value is");  // 2147483647
+        System.out.println(Integer.MAX_VALUE);
+
+         */
+
+// Long data type
+/*
+        long a= 9223372036854775807L;   // after increase 1 digit it gives error integer number too long
+        System.out.println("after increase 1 digit it gives error integer number too long cz the maximum value of long is ");
+        System.out.println(a);
+        System.out.println("minimum value is" );  // -9223372036854775808
+        System.out.println(Long.MIN_VALUE);
+        System.out.println("maximum value is");  // 9223372036854775807
+        System.out.println(Long.MAX_VALUE);
+
+ */
+
+//Float data type
+        /*
+        float a=3.4028235E38f;    // after increase 1 digit it gives error floating number too long
+        System.out.println("after increase 1 digit it gives error floating number too long cz  the maximum value of float is ");
+        System.out.println(a);
+        System.out.println("minimum value is ");    //1.4E-45
+        System.out.println(Float.MIN_VALUE);
+        System.out.println("maximum value is ");    //3.4028235E38
+        System.out.println(Float.MAX_VALUE);
+
+         */
+
+// double data type
+
+/*
+        double a= 1.7976931348623157E30; // after increase 1 digit it gives error floating number too long
+        System.out.println("after increase 1 digit it gives error floating number too long cz  the maximum value of double is ");
+        System.out.println(a);
+        System.out.println("minimum value is");    // 4.9E-324
+        System.out.println(Double.MIN_VALUE);
+        System.out.println("maximum value is");    // 1.7976931348623157E308
+        System.out.println(Double.MAX_VALUE);
+
+ */
+
+    // Char data type
+
+       // char a='a';
+        //System.out.println(a);
+
+
+// boolean data type
+   /*
+        boolean a = true;
+        System.out.println(a);
+        boolean b = false;
+        System.out.println(b);
+
+    */
 
 
 

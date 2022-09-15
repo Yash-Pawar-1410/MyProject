@@ -1,5 +1,6 @@
 import java.*;
 import java.util.Scanner;
+
 public class Assignment {
     public static void main(String[] args) {
 
@@ -272,7 +273,7 @@ public class Assignment {
 
 // Assignment 10 (Suppose the value if variable 'a' and 'b' are 6 and 8 respectively, Write two programs to swap the values of the two variables)
 
-  // 1 ) first program by using a third variable
+        // 1 ) first program by using a third variable
 
        /*
         int a=6;
@@ -290,7 +291,6 @@ public class Assignment {
         */
 
 
-
 // 2)  second program without using any variable
 /*
         int a=6;
@@ -304,7 +304,6 @@ public class Assignment {
         System.out.println(b);
 
  */
-
 
 
 // Assignment 11 (Write the program to convert fahrenheit into celsius)
@@ -361,13 +360,8 @@ public class Assignment {
 */
 
 
-
-
 // Assignment 14 (Take a 4-digit number. write a program to display a number whose digits are grater than the corresponding digits of the number taken
 // Example if the number which was taken is 5696 then the displayed number should be 7818)
-
-
-
 
 
 // Assignment 15 (Write the program to calculate the sum of the digit of a 3-digit number
@@ -448,6 +442,7 @@ public class Assignment {
 // Assignment 2 (Take two integer inputs from user
 // first calculate the sum of two then product of two
 // finally print the sum and product of both obtained results)
+      /*
         Scanner sc= new Scanner(System.in);
         System.out.println("enter the first number ");
         int a;
@@ -461,41 +456,135 @@ public class Assignment {
         System.out.println("sum of two number is  " +sum);
         System.out.println("product of number is  " +product);
         System.out.println("addition of sum and product is "+add);
+       */
+
+// Assignment 3 (Ask user to give two double input for length and breadth of a rectangle and print area type casting to int)
+   /*
+     Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the length");
+        double length;
+        length= sc.nextDouble();
+        System.out.println("Enter the breadth");
+        double breadth;
+        breadth= sc.nextDouble();
+        int area= (int) ((int) length*breadth);
+        System.out.println("Area of the rectangle is : " +area  );
+
+    */
+
+// Assignment 4 (Take name, roll number and field of interest from user and print in the format below
+// hey, my name is xyz and my roll number is xyz. My field of interest are xyz)
+      /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String Name;
+        Name= sc.nextLine();
+        System.out.println("Enter your area of interest");
+        String Area;
+        Area= sc.nextLine();
+        System.out.println("Enter the roll number");
+        int RollNumber;
+        RollNumber= sc.nextInt();
+
+        System.out.println("Hey,");
+        System.out.println("My name is "+Name+" and my roll number is "+RollNumber+". My field of interest are " +Area);
+
+       */
 
 
+// Assignment 5 (Take side of a square from user and print area and perimeter of it)
+       /*
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the side of square ");
+        double square;
+        square= sc.nextDouble();
+        double area = square * square;
+        System.out.println("Area of square is "+area);
+        double perimeter=4*square;
+        System.out.println("Perimeter of square is "+perimeter);
+        */
+
+// Assignment 6 ( Write a program to find square of a number
+// example input 2 output 4)
+        /*
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number");
+        double num;
+        num= sc.nextDouble();
+        double square=num*num;
+        System.out.println("Square of number is " +square);
+         */
 
 
+// Assignment 7 (Take two different string input and print them in same line
+// example input Codes
+// Dope
+// output CodeDope)
+ /*
+    Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first string ");
+        String Str1;
+        Str1= sc.nextLine();
+        System.out.println("Enter the second string");
+        String Str2;
+        Str2=sc.nextLine();
+        String add= Str1+Str2;
+        System.out.println("Entire string is :\n"+add);
+*/
 
 
+// Assignment 8 (Take 3 input from user and check all are equal
+// (use && ||))
+
+        /*  Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first number");
+        int num1;
+        num1= sc.nextInt();
+        System.out.println("Enter the second number");
+        int num2;
+        num2= sc.nextInt();
+        System.out.println("Enter the third number");
+        int num3;
+        num3 = sc.nextInt();
+        if(((num1==num2)&&(num1==num3)) && num2==num3){
+            System.out.println("all no are same");
+            }
+        else {
+            System.out.println("no are not same");
+        }
+        */
 
 
+// Assignment 9 (Write a program to enter the value of two variable 'a' and 'b' from keyboard and then check if both the conditions
+// 'a < 50' and  ' a<b' are true)
+      /*
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a= sc.nextInt();
+        System.out.println("enter the value of b");
+        int b= sc.nextInt();
+        if (a<50 && a<b){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+
+       */
 
 
+// Assignment 10 (If the marks of robert in three subjects are entered through keyboard (each out of 100), Write a program to calculate
+// his total marks and percentage marks)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter marks of the three subjects");
+        int Mark1 = sc.nextInt();
+        int Mark2 = sc.nextInt();
+        int Mark3 = sc.nextInt();
+        float sum = Mark1 + Mark2 + Mark3;
+        System.out.println("total sum of the three subject is :" + sum);
+        float per = (sum / 300) * 100;
+        System.out.println("Percentage of the subjects is :" + per);
 
 
 // IF else
@@ -539,9 +628,6 @@ public class Assignment {
         }
 
          */
-
-
-
 
 
 // Assignment 3 (A shop will give discount of 10% if the cost of purchased quality is more than 1000 ask user for quantity suppose one unit will cost
@@ -721,7 +807,7 @@ public class Assignment {
         */
 
 
- // Assignment 10
+        // Assignment 10
         /*
         int x=2;
         int y=5;
@@ -835,16 +921,6 @@ public class Assignment {
         System.out.print(digit3);
 
          */
-
-
-
-
-
-
-
-
-
-
 
 
     }

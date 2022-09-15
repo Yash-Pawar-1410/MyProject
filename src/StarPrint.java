@@ -22,7 +22,7 @@ public class StarPrint {
             {
                 System.out.print(" ");
             }
-            for(j=0; j<=i; j++)
+            for(j=0;j<=i;j++)
                 System.out.print("* ");
             {
                 System.out.println();
@@ -42,7 +42,6 @@ public class StarPrint {
             System.out.println();
         }
          */
-
 
 
 // Right down triangle star pattern
@@ -66,7 +65,6 @@ public class StarPrint {
          */
 
 // Pyramid star pattern
-
 
 
 // Sand-glass star pattern
@@ -97,5 +95,8 @@ public class StarPrint {
             System.out.println("");
         }
          */
+
+
+
     }
 }
