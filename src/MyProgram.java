@@ -159,6 +159,7 @@ public class MyProgram {
 
  */
 // Data type
+        // datatype are used to represent type of information
 
 // Byte data type
         /*
@@ -245,8 +246,94 @@ public class MyProgram {
         System.out.println(b);
 
     */
+/*
+        byte b =10;
+        short s=20;
+        int i=30;
+        long l=40L;
+        float f=50.5f;
+        double d=60.6d;
+         char c='A';
+       System.out.println(d+c);
+ */
+
+// Variables
+// variable is a small piece of information which can be used to store program data
+// variable plays an important role while shifting the data form front end to database
+// there are three types to store data in variables
 
 
+// Declaration = it is the process of creating new variable
+
+        //String empName;
+        //double empSalary;
+        //char empChar;
+
+//  Initialization = at the time of variable creation if we assign the value to the variable
+          // int empId=150;
+         //String empName = "Yash";
+        //System.out.println(empId);
+
+// Assignment = at the time of variable creation if we assign the value  after the variable
+/*
+        int a;
+        a=10;
+        int b;
+        b=10;
+        int sum;
+        sum=a+b;
+        System.out.println(sum);
+
+ */
+
+// Re-initialization = if we assign the different value to existing variable
+        // it's not mandatory to re-initialization to each and very variable
+
+        //double a=25.25;
+        //System.out.println("a value is" +a);
+        //a=32.32;
+        //System.out.println("re-initialization value is"+a);
+
+
+   // updated salary
+        /*
+        int salary=35000;
+        System.out.println("the salary of the employ is "+salary);
+        int updatedSalary=salary+(20*salary)/100; // another way is salary * 0.20
+        System.out.println("new salary is "+updatedSalary);
+         */
+
+// discount
+        /*
+        int quantity = 25;
+        double price = 432.21;
+        double totalAmount = quantity * price;
+        double discountAmount = totalAmount - totalAmount * 0.10;
+        double finalAmount = totalAmount-(discountAmount + discountAmount * 00.05);
+        System.out.println("quantity is \t" + quantity);
+        System.out.println("price is \t" + price);
+        System.out.println("total amount is \t" + totalAmount);
+        System.out.println("discount amount is \t" + discountAmount);
+        System.out.println("final amount using double discount is \t" + finalAmount);
+         */
+
+        // discount by using user input
+        /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the quantity of the product :");
+        int quantity = sc.nextInt();
+        System.out.println("Price of the product is :");
+        float price = sc.nextFloat();
+        float totalAmount = quantity * price;
+        System.out.println("Total amount is :" + totalAmount);
+        float discountAmount = totalAmount * 0.10f;
+        System.out.println("Discount price is :" + discountAmount);
+        float doubleDiscount = discountAmount * .10f;
+        System.out.println("Double discount price is :" + doubleDiscount);
+        float finalPrice = totalAmount-(discountAmount + doubleDiscount);
+        System.out.println("Final price of product is :" + finalPrice);
+
+         */
 
 
 
