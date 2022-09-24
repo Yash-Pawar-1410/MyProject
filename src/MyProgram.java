@@ -1,4 +1,5 @@
 import java.*;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class MyProgram {
@@ -334,6 +335,80 @@ public class MyProgram {
         System.out.println("Final price of product is :" + finalPrice);
 
          */
+
+
+// float and double output of same input
+        /*
+        double num1=25.235d;
+        double num2=12.12523d;
+        System.out.println("Result of double is");
+        System.out.println(num1*num2);
+
+        float no1=25.235f;
+        float no2=12.12523f;
+        System.out.println("Result of float is");
+        System.out.println(no1*no2);
+
+         */
+
+// input to variable is different but output of all variable is same
+        /*
+        int no1 = 15, no2 = 45, no3 = 65;
+        System.out.println(no1 + "\t" + no2 + "\t" + no3 + "\t");
+        no3 = no1;
+        no2 = no3;
+        no1 = no2;
+        System.out.println(no1 + "\t" + no2 + "\t" + no3 + "\t");
+
+         */
+
+// char print in int
+        /*
+        char c1 = 'a', c2 = 'b', c3 = 'c';
+        System.out.println(c1 + "\t" + c2 + "\t" + c3);
+        System.out.println((int) c1 + "\t" + (int) c2 + "\t" + (int) c3);
+        System.out.println((int) (c1 - 32) + "\t" + (int) (c2 - 32) + "\t" + (int) (c3 - 32));
+        System.out.println((char) (c1 - 32) + "\t" + (char) (c2 - 32) + "\t" + (char) (c3 - 32));
+
+         */
+// increment and decrement
+      //  int a=1;
+       // System.out.println(++a + a++ + ++a);
+        
+// table of 15
+       // int num=15;
+        //int mul=0;
+        //for (int i=1; i<=10; i++){
+          //  System.out.println(num*i);
+        //}
+
+
+// Checking password same or not using if else
+       /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your name or username ");
+        String name = sc.nextLine();
+        System.out.println("Please enter your password ");
+        String pass = sc.nextLine();
+        System.out.println("Please confirm your password");
+        String confPass = sc.nextLine();
+        System.out.println("Your username is :" + name);
+        if (pass.equals(confPass)) {
+            System.out.println("Your password is :" + pass);
+        } else {
+            System.out.println("Please check your password");
+        }
+
+        */
+
+
+
+
+
+
+
+
+
 
 
 

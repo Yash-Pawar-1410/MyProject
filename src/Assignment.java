@@ -575,7 +575,7 @@ public class Assignment {
 
 // Assignment 10 (If the marks of robert in three subjects are entered through keyboard (each out of 100), Write a program to calculate
 // his total marks and percentage marks)
-
+ /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter marks of the three subjects");
         int Mark1 = sc.nextInt();
@@ -585,6 +585,8 @@ public class Assignment {
         System.out.println("total sum of the three subject is :" + sum);
         float per = (sum / 300) * 100;
         System.out.println("Percentage of the subjects is :" + per);
+
+  */
 
 
 // IF else
@@ -638,7 +640,7 @@ public class Assignment {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the quantity");
         Quantity= sc.nextInt();
-        if (Quantity*100>10000)
+        if (Quantity*100>1000)
         {
 
             System.out.println((Quantity*100)-((Quantity/100)*100));
@@ -923,6 +925,135 @@ public class Assignment {
          */
 
 
-    }
+        // LOOP-LOOP-LOOP
 
+        // Assignment 1    (Take 10 integer from keyboard using loop and print their average value on the screen)
+/*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int i = sc.nextInt();
+        int sum = 0;
+        float avg = 0;
+        int counter = 0;
+        for (; i < 10; i++) {
+            System.out.println("sum of the number is " + sum);
+            sum = sum + i;
+            counter++;
+            System.out.println("average of the number is " + avg);
+            avg = (float) sum / counter;
+ */
+
+// Assignment 2 (print the following star pattern
+// *
+// * *
+// * * *
+// * * * *)
+
+        /*
+        for (int row = 0; row <5 ; row++) {
+            for (int column = 0; column <=row ; column++) {
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+
+         */
+
+// Assignment 3 (Print the following pattern
+//   *
+//  ***
+// *****
+//  ***
+//   *)
+
+// Assignment 4 (Print the following pattern
+//  1010101
+//   10101
+//    101
+//     1    )
+
+
+// Assignment 5 (Print multiplication table 24,50 and 29 using loop)
+/*
+        int num1 = 45;
+        int num2 = 50;
+        int num3 = 29;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(" 45 * " + i + " is " + num1 * i);
+        }
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(" 50 * " + i + " is " + num2 * i);
+        }
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(" 29 * " + i + " is " + num3 * i);
+        }
+ */
+
+//Assignment 6 (Print ASCII values and their equivalent characters. ASCII value vary from 0 to 255)
+        /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the character to print their ASCII value ");
+        char ch=sc.next().charAt(0);
+        System.out.println((int)ch);
+         */
+
+// Assignment 7 (Factorial)
+        /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int n = sc.nextInt();
+        int factorial = 1;
+        if (n == 0) {
+            factorial = 0;
+        }
+
+        for (int i = 1; i<=n; i++) {
+            factorial *= i;
+        }
+        System.out.println("factorial of the number "+n +" is "+factorial);
+
+         */
+
+
+// Assignment 8 (Write a program to find the greatest common divisor  (GCD) or highest common factor (HCF) of given two number)
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number");
+        int n1 = sc.nextInt();
+        System.out.println("Enter the second number");
+        int n2 = sc.nextInt();
+        while (n1 != n2) {
+            if (n1 > n2) {
+                n1 = n1 - n2;
+            } else {
+                n2 = n2 - n1;
+            }
+        }
+        System.out.println("GDC of two number is " + n2);
+        int hcf = 0;
+        for (int i = 1; i <= n1; i++) {
+            if (n1 % i == 0 && n2 % i == 0) {
+                hcf = i;
+            }
+        }
+        System.out.println("HCF of two number is " + hcf);
+
+         */
+
+// Assignment 9 (Take integer inputs from user until he/she presses q (Ask to press q to quit  after every integer input) Print average and product
+// of all number )
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        int counter=0;
+        char wantToContinue=' ';
+
+
+
+
+
+
+
+
+
+
+    }
 }
