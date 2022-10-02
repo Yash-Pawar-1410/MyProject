@@ -11,23 +11,24 @@ public class Employee {
     int salary;
     String add;
 
-    void setvalue(String str, int join, int sal, String ad){
-        name=str;
-        yoj=join;
-        salary=sal;
-        add=ad;
+    void setvalue(String str, int join, int sal, String ad) {
+        name = str;
+        yoj = join;
+        salary = sal;
+        add = ad;
     }
-    void print(){
-        System.out.println(name+"  "+yoj+"  "+salary+"  "+add);
+
+    void print() {
+        System.out.println(name + "  " + yoj + "  " + salary + "  " + add);
     }
 
     public static void main(String[] args) {
-        Employee employee=new Employee();
-        employee.setvalue("robert",1994, 1200, "abc" );
+        Employee employee = new Employee();
+        employee.setvalue("robert", 1994, 1200, "abc");
         employee.print();
 
-        Employee employee1=new Employee();
-        employee1.setvalue("sam   ",2000, 2200, "xyz" );
+        Employee employee1 = new Employee();
+        employee1.setvalue("sam   ", 2000, 2200, "xyz");
         employee1.print();
     }
 }
