@@ -1045,6 +1045,9 @@ public class Assignment {
         int sum=0;
         int counter=0;
         char wantToContinue=' ';
+        if (wantToContinue=='q'){
+
+        }
 
 
 

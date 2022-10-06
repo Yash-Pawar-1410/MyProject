@@ -8,12 +8,14 @@ public class Assignment_7 {
         Scanner scanner=new Scanner(System.in);
         System.out.println("enter the number");
         int num=scanner.nextInt();
-        if (num%2==0){
-            System.out.println("it is a prime number");
+        boolean isPrime=true;
+        for (int i = 2; i <num/2; i++) {
+            if (num%2==0 && num!=2){
+                isPrime = false;
+                break;
+            }
         }
-        else {
-            System.out.println("it is not prime number");
-        }
+        System.out.println((isPrime)? "Prime number" :"not a prime number");
     }
 
     public static void main(String[] args) {
