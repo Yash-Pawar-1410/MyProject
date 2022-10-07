@@ -29,13 +29,13 @@ public class Assignment_15 {
             tax = 0;
             System.out.println("tax is " + tax);
         } else if (netTax > 100000 && netTax < 200000) {
-            tax1 += (float) (0.10 * grossSalary);
+            tax1 =+tax1 +(float) (0.10 * grossSalary);
             System.out.println("tax is " + tax1);
         } else if (netTax > 200000 && netTax < 500000) {
-            tax2 += (float) (0.20 * grossSalary);
+            tax2 = tax2+(float) (0.20 * grossSalary);
             System.out.println("tax is " + tax2);
         } else if (netTax > 500000) {
-            tax3 += tax + tax1 + tax2 + (float) (0.30 * grossSalary);
+            tax3 = tax + tax1 + tax2 + (float) (0.30 * grossSalary);
             System.out.println("tax is " + tax3);
         }
     }

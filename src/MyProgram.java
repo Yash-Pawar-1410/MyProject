@@ -1,5 +1,4 @@
-import java.*;
-import java.util.Objects;
+
 import java.util.Scanner;
 
 public class MyProgram {
@@ -10,26 +9,25 @@ public class MyProgram {
         // System.out.println("hello, how are you");
 
         // Print using user input
-        /*
-        String name;
+      /*  String name;
         Scanner sc= new Scanner(System.in);
         name=sc.nextLine();
         System.out.println(name);
-        */
+*/
+
 
 
         // Simple addition
-        /*
-        int a=10;
+      /*  int a=10;
         int b=20;
         int c=a+b;
-        System.out.println(c);
-        */
+        System.out.println(c);*/
+
+
 
 
         // Addition using user input
-        /*
-        int a,b;
+     /*   int a,b;
         int sum,sum1,sum2,sum3;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the first num.");
@@ -44,13 +42,13 @@ public class MyProgram {
         System.out.println(sum1);
         System.out.println(sum2);
         System.out.println(sum3);
-        */
+
+*/
 
 
         // Simple avg and percentage
-        /*
+  /*      int b=25;
         int a=10;
-        int b=25;
         int c=65;
         float totalAdd;
         float avg;
@@ -64,9 +62,9 @@ public class MyProgram {
 */
 
 
+
         // avg and percentage using user input
-        /*
-        int a, b, c, d;
+  /*      int a, b, c, d;
         float totalAdd;
         float avg;
         float percent;
@@ -82,11 +80,11 @@ public class MyProgram {
         System.out.println("Average of the four subject is :" + avg);
         percent = (totalAdd / 400) * 100f;
         System.out.println("Percentage of the four subject is :" + percent);
-        */
+*/
+
 
         // Simple interest
-        /*
-        int principalAmount=10000;
+      /*  int principalAmount=10000;
         int rate=10;
         int time=6;
         float simpleInterest;
@@ -95,11 +93,12 @@ public class MyProgram {
         System.out.println("Simple interest is :"+simpleInterest);
         totalAmount=principalAmount+simpleInterest;
         System.out.println("Total amount is:"+totalAmount);
-         */
+
+*/
 
         // Simple interest using user input
+/*
 
-       /*
         int principalAmount;
         int percentageRate;
         float time;
@@ -116,7 +115,9 @@ public class MyProgram {
         System.out.println("Simple interest is"+simpleInterest);
         totalAmount=principalAmount+simpleInterest;
         System.out.println("Total amount is"+totalAmount);
-        */
+
+*/
+
 
 // STRING METHODS
 
@@ -157,13 +158,15 @@ public class MyProgram {
         System.out.println('a'+"string");
         System.out.println("string"+'A');
         System.out.println("string"+"String");
+*/
 
- */
+
+
 // Data type
         // datatype are used to represent type of information
 
 // Byte data type
-        /*
+/*
         byte a = (byte) 128;  // data loss take place in these
         System.out.println("if we enter value above the max (by using casting it starts checking number from min value) ");
         System.out.println(a);
@@ -171,10 +174,12 @@ public class MyProgram {
         System.out.println(Byte.MIN_VALUE);
         System.out.println("maximum value of byte is ");  //127
         System.out.println(Byte.MAX_VALUE);
-         */
+
+*/
+
 
 // Short data type
-        /*
+/*
         short a=(short)32768; // data loss take place in this
         System.out.println("if we enter value above the max (by using casting it starts checking number from min value) ");
         System.out.println(a);
@@ -182,10 +187,12 @@ public class MyProgram {
         System.out.println(Short.MIN_VALUE);
         System.out.println("maximum value is ");  // 32767
         System.out.println(Short.MAX_VALUE);
-         */
+
+*/
+
 
    // Int data type
-        /*
+/*
         int a= 2147483647;  // after increase 1 digit it gives error integer number too long
         System.out.println("after increase 1 digit it gives error integer number too long cz the maximum value of int is ");
         System.out.println(a);
@@ -194,7 +201,9 @@ public class MyProgram {
         System.out.println("maximum value is");  // 2147483647
         System.out.println(Integer.MAX_VALUE);
 
-         */
+*/
+
+
 
 // Long data type
 /*
@@ -206,10 +215,12 @@ public class MyProgram {
         System.out.println("maximum value is");  // 9223372036854775807
         System.out.println(Long.MAX_VALUE);
 
- */
+
+*/
+
 
 //Float data type
-        /*
+/*
         float a=3.4028235E38f;    // after increase 1 digit it gives error floating number too long
         System.out.println("after increase 1 digit it gives error floating number too long cz  the maximum value of float is ");
         System.out.println(a);
@@ -218,11 +229,13 @@ public class MyProgram {
         System.out.println("maximum value is ");    //3.4028235E38
         System.out.println(Float.MAX_VALUE);
 
-         */
+*/
+
+
 
 // double data type
-
 /*
+
         double a= 1.7976931348623157E30; // after increase 1 digit it gives error floating number too long
         System.out.println("after increase 1 digit it gives error floating number too long cz  the maximum value of double is ");
         System.out.println(a);
@@ -230,8 +243,10 @@ public class MyProgram {
         System.out.println(Double.MIN_VALUE);
         System.out.println("maximum value is");    // 1.7976931348623157E308
         System.out.println(Double.MAX_VALUE);
+*/
 
- */
+
+
 
     // Char data type
 
@@ -240,23 +255,25 @@ public class MyProgram {
 
 
 // boolean data type
-   /*
+        short s=20;
+/*
         boolean a = true;
         System.out.println(a);
         boolean b = false;
         System.out.println(b);
 
-    */
-/*
+
+
         byte b =10;
-        short s=20;
         int i=30;
         long l=40L;
         float f=50.5f;
         double d=60.6d;
          char c='A';
        System.out.println(d+c);
- */
+*/
+
+
 
 // Variables
 // variable is a small piece of information which can be used to store program data
@@ -285,7 +302,9 @@ public class MyProgram {
         sum=a+b;
         System.out.println(sum);
 
- */
+
+*/
+
 
 // Re-initialization = if we assign the different value to existing variable
         // it's not mandatory to re-initialization to each and very variable
@@ -297,15 +316,17 @@ public class MyProgram {
 
 
    // updated salary
-        /*
+/*
         int salary=35000;
         System.out.println("the salary of the employ is "+salary);
         int updatedSalary=salary+(20*salary)/100; // another way is salary * 0.20
         System.out.println("new salary is "+updatedSalary);
-         */
+*/
+
+
 
 // discount
-        /*
+/*
         int quantity = 25;
         double price = 432.21;
         double totalAmount = quantity * price;
@@ -316,10 +337,12 @@ public class MyProgram {
         System.out.println("total amount is \t" + totalAmount);
         System.out.println("discount amount is \t" + discountAmount);
         System.out.println("final amount using double discount is \t" + finalAmount);
-         */
+
+*/
+
 
         // discount by using user input
-        /*
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the quantity of the product :");
         int quantity = sc.nextInt();
@@ -333,12 +356,14 @@ public class MyProgram {
         System.out.println("Double discount price is :" + doubleDiscount);
         float finalPrice = totalAmount-(discountAmount + doubleDiscount);
         System.out.println("Final price of product is :" + finalPrice);
+*/
 
-         */
+
+
 
 
 // float and double output of same input
-        /*
+/*
         double num1=25.235d;
         double num2=12.12523d;
         System.out.println("Result of double is");
@@ -349,10 +374,12 @@ public class MyProgram {
         System.out.println("Result of float is");
         System.out.println(no1*no2);
 
-         */
+
+*/
+
 
 // input to variable is different but output of all variable is same
-        /*
+/*
         int no1 = 15, no2 = 45, no3 = 65;
         System.out.println(no1 + "\t" + no2 + "\t" + no3 + "\t");
         no3 = no1;
@@ -360,17 +387,21 @@ public class MyProgram {
         no1 = no2;
         System.out.println(no1 + "\t" + no2 + "\t" + no3 + "\t");
 
-         */
+*/
+
+
 
 // char print in int
-        /*
+/*
         char c1 = 'a', c2 = 'b', c3 = 'c';
         System.out.println(c1 + "\t" + c2 + "\t" + c3);
         System.out.println((int) c1 + "\t" + (int) c2 + "\t" + (int) c3);
         System.out.println((int) (c1 - 32) + "\t" + (int) (c2 - 32) + "\t" + (int) (c3 - 32));
         System.out.println((char) (c1 - 32) + "\t" + (char) (c2 - 32) + "\t" + (char) (c3 - 32));
+*/
 
-         */
+
+
 // increment and decrement
       //  int a=1;
        // System.out.println(++a + a++ + ++a);
@@ -384,7 +415,7 @@ public class MyProgram {
 
 
 // Checking password same or not using if else
-       /*
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter your name or username ");
         String name = sc.nextLine();
@@ -399,7 +430,9 @@ public class MyProgram {
             System.out.println("Please check your password");
         }
 
-        */
+*/
+
+
 
 
 
