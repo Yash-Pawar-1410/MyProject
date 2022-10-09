@@ -1,8 +1,10 @@
+package Constructor;
+
 public class Constructor {
     int a;
     int b;
 
-    Constructor(int x, int y) {
+    public Constructor(int x, int y) {
         a = x;
         b = y;
     }

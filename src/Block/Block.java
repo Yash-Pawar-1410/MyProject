@@ -1,3 +1,5 @@
+package Block;
+
 public class Block {
     {
         System.out.println("instance block1");
