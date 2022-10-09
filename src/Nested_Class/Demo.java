@@ -1,3 +1,5 @@
+/**  Static inner Nested class with only static member   */
+
 package Nested_Class;
 
 public class Demo {
