@@ -14,14 +14,12 @@ public class Demo3 {
         }
     }
     class Inner {
-        static int a1 = 10;
+
         int b1 = 20;
         void m3() {
             System.out.println("instance method");
         }
-        static void m4() {
-            System.out.println("static method");
-        }
+
     }
 
     void m4() {
@@ -31,14 +29,12 @@ public class Demo3 {
             void m5(){
                 System.out.println("instance method");
             }
-            static void m6(){
-                System.out.println("static method");
-            }
+
         }
         LocalInner localInner=new LocalInner();
         System.out.println(localInner.a2);
         localInner.m5();
-        LocalInner.m6();
+
 
     }
     public static void main(String[] args) {
@@ -50,9 +46,9 @@ public class Demo3 {
 
         Demo3 demo =new Demo3();
         Demo3.Inner inner =demo.new Inner();
-        System.out.println(Demo3.Inner.a1);
+
         System.out.println(inner.b1);
-        Demo3.Inner.m4();
+
         inner.m3();
 
         demo.m4();
