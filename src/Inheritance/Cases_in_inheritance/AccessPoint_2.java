@@ -29,7 +29,7 @@ public class AccessPoint_2 extends ChildClass{
         ChildClass.m4();//     print child class method not a parent class                                       ( static method )
         System.out.println("-------------------------------------------------------");
         System.out.println("common data contain in both parent and child class");
-        System.out.println(parent_child_class.d); //22    print the parent class value  not a child class         ( Instance Variable )
+        System.out.println(parent_child_class.d); //22    print the parent class value  not a child class           ( Instance Variable )
         System.out.println(ChildClass.b); //25    print the child class value  not a parent class   due to class name ( static variable )
         parent_child_class.m5(); // print the child class method not a parent class method                        ( Instance method )
         ChildClass.m6(); // print the child class method not a parent class method                                ( static method )
