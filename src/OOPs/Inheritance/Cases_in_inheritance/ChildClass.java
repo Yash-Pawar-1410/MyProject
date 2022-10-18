@@ -1,4 +1,4 @@
-package Inheritance.Cases_in_inheritance;
+package OOPs.Inheritance.Cases_in_inheritance;
 
 public class ChildClass extends ParentClass{
     int c=10;

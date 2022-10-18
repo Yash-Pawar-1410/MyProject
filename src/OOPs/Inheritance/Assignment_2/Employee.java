@@ -4,7 +4,7 @@
  *  to be written in all the classes */
 
 
-package Inheritance.Assignment_2;
+package OOPs.Inheritance.Assignment_2;
 
 import java.util.Scanner;
 

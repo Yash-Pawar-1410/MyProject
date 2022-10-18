@@ -28,7 +28,7 @@ public class Method {
         a.sub();
         a.string();
        a.Char();
-
+    Methods.m2(); // call from methods class
 
     }
 }

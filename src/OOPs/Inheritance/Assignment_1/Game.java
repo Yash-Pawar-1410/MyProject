@@ -1,6 +1,6 @@
 // Assignment 1
 
-package Inheritance.Assignment_1;
+package OOPs.Inheritance.Assignment_1;
 
 public class Game {
       public void Class1(){

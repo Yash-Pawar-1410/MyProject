@@ -1,4 +1,4 @@
-package Inheritance.Assignment_2;
+package OOPs.Inheritance.Assignment_2;
 
 public class WageEmployee extends Employee {
 

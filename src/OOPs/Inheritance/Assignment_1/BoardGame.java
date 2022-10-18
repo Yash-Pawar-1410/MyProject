@@ -1,4 +1,4 @@
-package Inheritance.Assignment_1;
+package OOPs.Inheritance.Assignment_1;
 
 public class BoardGame extends Game {
     public void Class2(){

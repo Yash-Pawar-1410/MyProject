@@ -1,4 +1,4 @@
-package Inheritance.Cases_in_inheritance;
+package OOPs.Inheritance.Cases_in_inheritance;
 
 public class AccessPoint1 extends ChildClass{
    public static void main(String[] args) {

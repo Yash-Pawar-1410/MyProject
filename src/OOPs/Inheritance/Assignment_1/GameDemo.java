@@ -1,6 +1,4 @@
-package Inheritance.Assignment_1;
-
-import Inheritance.Assignment_1.Chess;
+package OOPs.Inheritance.Assignment_1;
 
 public class GameDemo extends Chess {
 
