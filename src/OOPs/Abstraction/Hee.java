@@ -1,4 +1,4 @@
 package OOPs.Abstraction;
 
-public class A {
+public class Hee {
 }

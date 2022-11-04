@@ -12,4 +12,6 @@ public class Product {
         this.productCompany=productCompany;
         this.productPrice=productPrice;
     }
+
+
 }
