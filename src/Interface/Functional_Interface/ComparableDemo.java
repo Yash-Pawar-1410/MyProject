@@ -3,10 +3,13 @@ package Interface.Functional_Interface;
 public class ComparableDemo {
     public static void main(String[] args) {
         // traditional way
-        Comparable comparable1=new ComparabaleImp();
+        Comparable comparable1 = new ComparabaleImp();
         System.out.println(comparable1.compareTo(1));
+
+        //------------------------------------------------------------------
+
         //Anonymous class way
-        Comparable comparable=new Comparable() {
+        Comparable comparable = new Comparable() {
             @Override
             public int compareTo(Object o) {
                 return 20;
@@ -14,11 +17,15 @@ public class ComparableDemo {
         };
         System.out.println(comparable.compareTo(2));
 
-        Comparable lambda=(object)->30;
-        System.out.println( lambda.compareTo(3));
+        //------------------------------------------------------------------
+
+        // lambda expression way
+        Comparable lambda = (object) -> 30;
+        System.out.println(lambda.compareTo(3));
     }
 }
-class ComparabaleImp implements Comparable{
+
+class ComparabaleImp implements Comparable {
 
     @Override
     public int compareTo(Object o) {

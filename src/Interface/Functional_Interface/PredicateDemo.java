@@ -7,16 +7,22 @@ public class PredicateDemo {
         //  Traditional way
         Predicate predicate1 = new PredicateImp();
         System.out.println(predicate1.test(1));
+
+        //------------------------------------------------------------------
+
         // anonymous class way
         Predicate predicate = new Predicate() {
             @Override
             public boolean test(Object o) {
-                return false;
+                return true;
             }
         };
         System.out.println(predicate.test(12));
+
+        //------------------------------------------------------------------
+
         // Lambda expression
-        Predicate lambda=(object)-> false;
+        Predicate lambda = (object) -> false;
         System.out.println(lambda.test("hello"));
     }
 }
