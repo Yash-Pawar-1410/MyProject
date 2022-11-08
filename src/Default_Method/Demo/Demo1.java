@@ -4,13 +4,13 @@ public class Demo1 implements A1, B1 {
       @Override
     public void m1() {
        System.out.println("this is from A1 and meethod is m1");
-          A1.super.m2();
-          B1.super.m2();
+
       }
 
     @Override
     public void m2() {
-
+        A1.super.m2();
+        B1.super.m2();
     }
 
 
