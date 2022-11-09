@@ -1,14 +1,13 @@
 package Final_Keyword;
 
-public final class Student {
-    private int rollNumber;
-    private String studName;
-    public Student(int roll, String name) {
-        rollNumber=roll;
-        studName=name;
+public class Student {
+    int id;
+    String name;
+
+    public Student(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
-    void m2 (){
-        System.out.println(rollNumber);
-        System.out.println(studName);
-    }
+
+
 }
