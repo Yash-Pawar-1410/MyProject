@@ -404,7 +404,7 @@ public class Assignment {
 
 
 
-   /*
+
     int num=123, rev=0;
 
     while (num!=0)
@@ -415,7 +415,7 @@ public class Assignment {
     }
         System.out.println("The reverse order of the number is" +rev);
 
-    */
+
 
 
 //UserInput
