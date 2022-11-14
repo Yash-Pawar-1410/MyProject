@@ -2,7 +2,7 @@ package ObjectClass;
 
 import Access_Modifier.Practice;
 import Access_Modifier1.ProductDemo1;
-import Anonymous_Class.Abstract.Main;
+import Anonymous_Class.Abstract.Demo.Main;
 import Call_By_Value.Addition;
 
 
@@ -28,7 +28,7 @@ public class GetClassMethodDemo1 {
         Class mAA=mainAA.getClass();
         System.out.println(mAA.getName());
 
-        Anonymous_Class.Interfacee.Main mainI=new Anonymous_Class.Interfacee.Main();
+        Anonymous_Class.Interfacee.Demo.Main mainI=new Anonymous_Class.Interfacee.Demo.Main();
         Class clsI=mainI.getClass();
         System.out.println(clsI.getName());
 

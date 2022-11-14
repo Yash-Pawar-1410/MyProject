@@ -1,6 +1,6 @@
-package Anonymous_Class.Abstract;
+package Anonymous_Class.Abstract.Demo;
 
-import Anonymous_Class.Abstract.A;
+import Anonymous_Class.Abstract.Demo.A;
 
 public class B extends A {
 

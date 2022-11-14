@@ -1,4 +1,4 @@
-package Anonymous_Class.Interfacee;
+package Anonymous_Class.Interfacee.Demo;
 
 public interface A {
     void m1();

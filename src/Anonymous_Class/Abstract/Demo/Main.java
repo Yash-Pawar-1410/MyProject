@@ -1,7 +1,7 @@
-package Anonymous_Class.Abstract;
+package Anonymous_Class.Abstract.Demo;
 
-import Anonymous_Class.Abstract.A;
-import Anonymous_Class.Abstract.B;
+import Anonymous_Class.Abstract.Demo.A;
+import Anonymous_Class.Abstract.Demo.B;
 
 public class Main {
     public static void main(String[] args) {

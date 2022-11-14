@@ -1,4 +1,6 @@
-package Anonymous_Class.Interfacee;
+package Anonymous_Class.Interfacee.Demo;
+
+import Anonymous_Class.Interfacee.Demo.A1;
 
 public class Main implements A1 {
     @Override
