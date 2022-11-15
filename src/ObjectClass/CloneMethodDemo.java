@@ -1,6 +1,6 @@
 package ObjectClass;
 
-public class CloneMethodDemo implements Cloneable{
+public class CloneMethodDemo implements Cloneable {
     String name;
     int id;
 
@@ -25,12 +25,14 @@ public class CloneMethodDemo implements Cloneable{
         System.out.println("*************************************");
         System.out.println("Making copy of the object");
         System.out.println("-------------------------------------");
-        System.out.println( "it change the value of original object");
+        System.out.println("it change the value of original object");
         System.out.println("*************************************");
         // making copy of the object using original reference
         CloneMethodDemo copy = original;
         // reassign the values
         copy.name = ("neha");
+
+
         copy.id = (300);
         // calling the instance method using copy reference
         // it changes the value of original object
@@ -46,10 +48,10 @@ public class CloneMethodDemo implements Cloneable{
         System.out.println("it assign the values in cloned object");
         System.out.println("*************************************");
         // making clone of the object using original reference
-        CloneMethodDemo copy1= (CloneMethodDemo) original.clone();
+        CloneMethodDemo copy1 = (CloneMethodDemo) original.clone();
         // reassign the value
-        copy1.name="Harshada";
-        copy1.id=400;
+        copy1.name = "Harshada";
+        copy1.id = 400;
         //calling the instance method using copy1 reference
         //it makes the clone of  the object and assign the value in cloned object
         copy1.m1();
