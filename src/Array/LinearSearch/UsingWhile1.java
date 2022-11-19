@@ -1,16 +1,19 @@
 package Array.LinearSearch;
 
-public class UsingFor2 {
+public class UsingWhile1 {
     public static void main(String[] args) {
-        int[] array = {22, 56, 26, 54};
+        int[] array = {1, 2, 3, 4};
         int key = 2;
         boolean isPresent = false;
-        for (int index = 0; index < array.length; index++) {
+        int index = 0;
+        while (index < array.length) {
             if (array[index] == key) {
                 isPresent = true;
                 break;
             }
+            index++;
         }
-        System.out.println(isPresent?"it is present":"it is not present");
+        System.out.println(isPresent ? "it is present" : "it is not present");
     }
+
 }

@@ -1,8 +1,8 @@
-package Array.Reverse;
+package Array.Number_Reverse;
 
 import java.util.Scanner;
 
-public class Demo1_UserInput {
+public class UsingFor3_UserInput {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of the array");

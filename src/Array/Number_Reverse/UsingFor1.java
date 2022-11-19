@@ -1,6 +1,6 @@
-package Array.Reverse;
+package Array.Number_Reverse;
 
-public class Demo1 {
+public class UsingFor1 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
         for (int left = 0, right = array.length - 1; left < right; left++, right--) {

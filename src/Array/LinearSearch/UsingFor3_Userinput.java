@@ -18,6 +18,7 @@ public class UsingFor3_Userinput {
         for (int i = 0; i <index ; i++) {
             if (array[i]==num){
                 isPresent=true;
+                break;
             }
         }
         System.out.println(isPresent?num+" is present ":num+" not present ");

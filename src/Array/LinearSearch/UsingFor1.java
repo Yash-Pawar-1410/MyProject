@@ -8,6 +8,7 @@ public class UsingFor1 {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == key)
                 isPresent = true;
+            break;
         }
         System.out.println(isPresent ? "it is present in the array" : "it is not present in the array");
     }
