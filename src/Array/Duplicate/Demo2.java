@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Demo2 {
     public static void main(String[] args) {
+
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter the size of the array");
         int size= scanner.nextInt();
@@ -15,8 +16,10 @@ public class Demo2 {
         }
         for (int i = 0; i <size ; i++) {
             for (int j = 0; j < size; j++) {
-                found=true;
-                break;
+               if (array[i]==array[j]&&i!=j){
+                   found=true;
+                   break;
+               }
             }
             if (found==true){
                 break;
