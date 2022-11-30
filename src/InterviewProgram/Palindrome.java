@@ -5,9 +5,8 @@ public class Palindrome {
         int num = 454;
         int temp = num;
         int sum = 0;
-        int a;
         while (num > 0) {
-            a = num % 10;
+            int a = num % 10;
             sum = (sum * 10) + a;
             num = num / 10;
         }
