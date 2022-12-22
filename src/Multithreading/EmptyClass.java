@@ -1,4 +1,4 @@
 package Multithreading;
 
-public class Demo {
+public class EmptyClass {
 }
