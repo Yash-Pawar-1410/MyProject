@@ -1,0 +1,203 @@
+Core Java notes
+Q What is Computer
+-> A computer is a device or machine that performs processes, calculations and operations
+------------------------------------------------------------------------------------------------------------------------
+Q What is language
+-> language is the medium of the communication
+-> every language has set of rules, grammar rules
+------------------------------------------------------------------------------------------------------------------------
+Q What is programming
+-> programming is nothing but set of instructions given to the computer
+------------------------------------------------------------------------------------------------------------------------
+Q What is binary language [0,1]
+-> it is present in 0s and 1s form
+-> it is understood by operating system
+-> in binary language we write the code in 0s and 1s from but problem is that if we write 0s place 1s and 1s place 0s logic will be change
+-> if any error come inside the program then it is difficult to find that because everything in 0s and 1s form
+-> for small application we have to write number of lines code
+
+Q what is assembly language
+-> in assembly language we write code in english like words which is called mnemonics
+        example. ADD NUM1,NUM2
+-> but problem is that with this language it not directly understood by operating system because operating system knows only binary language,
+   so we need assembler or translator to translate this language into binary language
+
+Q what is high level programming language
+-> this language is easy to understand by any developer so it is called HLPL
+------------------------------------------------------------------------------------------------------------------------
+Q What is software and their types
+-> it is a set of instruction to perform specific task
+    # Types of software are System software and Application software
+    -> System software is designed to run computers hardware and provide a platform to run the applications
+            eg. Windows, linux
+    -> Application software is designed for end user to perform specific task
+            eg. notepad, word
+------------------------------------------------------------------------------------------------------------------------
+Q Introduction of the java
+-> james gosling is father of the java
+-> originally java developed by sun micro-system in 1991 and first version release in 1995
+-> initial name of the java is OAK
+-> there are no abbreviation ( short name) of java
+-> slogan of the java is WORA (write once run anywhere)
+-> currently java 19 version was release on sep 2022, every march and sep new java version is release
+-> currently we are using java 8 and java 11 version in the companies
+------------------------------------------------------------------------------------------------------------------------
+Q goal behind making java
+        or
+ why java is the 1st choice of any programmer
+-> WORA
+-> less execution time
+-> less number of instruction
+-> less memory consumption
+-> less power consumption
+------------------------------------------------------------------------------------------------------------------------
+Q What is java
+-> java is the class based object-oriented high level programming language
+        # object-oriented because we can write everything inside the class and object
+        # high level programming language because it is easy to understand for java developers
+-> by using java we can develop application software like standalone application, web application, enterprise application
+------------------------------------------------------------------------------------------------------------------------
+Q java feature
+1) Simple
+-> complex syntax which are present inside the c, c++ are removed just like friend function, explicit pointers, operator overloading
+
+2) platform independent
+-> In java we can write the code only once then java compiler convert that code in byte code or intermediate code after that jvm take byte code as an input and
+   convert it into machine language. JVM is different for every operating system means jvm is platform dependent
+
+-> app.java --> javac --> app.class --> jvm (for windows)--> binary/machine language
+                          app.class --> jvm (for mac)--> binary/machine language
+                          app.class --> jvm (for linux)--> binary/machine language
+
+    # platform => it is an environment which let you execute the software
+        eg. highway => road provide the environment to run the vehicles
+        -> platform can be both software (os) and hardware (laptop)
+
+    # platform independency => we can write code only once and run that code on any machine / operating system
+    # platform dependency => write code on particular machine and run that code on that particular machine in which we write the code
+
+    Q why c language are platform dependent
+    -> in c we write code every time on particular machine and c compiler direct convert that code into machine language
+    -> App.c --> c compiler --> binary/machine language (for windows)
+       App.c --> c compiler --> binary/machine language (for mac)
+       App.c --> c compiler --> binary/machine language (for linux)
+
+3) Secure
+-> in java for developer does not have direct memory access it means pointer does not support in java (internally pointer support by jvm)
+-> there are some access specifiers are available in java that restrict the direct access in the code
+-> security manager packages also available in java that does authentication and authorisation both
+
+4) Robust
+-> there is strong exception and error management is done with the help of exception handler
+-> Memory management is also handled in efficient way
+-> garbage collector is the program which remove the unreferenced or unused memory
+
+5) Object-Oriented
+-> in java we can write everything in the term of object and class
+
+6) Multithreaded
+-> multi - multiple
+    thread - block of code
+    multiple block of code run at a same time is called multithreading
+-> parallel execution of the code is possible in java
+
+7) high in performance
+-> java support multithreading and JIT (just in time compiler) present inside the java
+------------------------------------------------------------------------------------------------------------------------
+Q Java 8 features
+-> functional interface (interface which contain single abstract method)
+-> default methods in interface (method created inside the interface with default keyword and which has implementation)
+-> static methods in interface
+-> lambda expression (it is expression which is used to implement the functional interface)
+-> method reference (it is used to replace a single method of the lambda expression)
+------------------------------------------------------------------------------------------------------------------------
+Q Java 7 features
+-> strings in switch statement
+-> the try with resources
+-> caching multiple exceptions by single catch
+-> binary literals (it is a number that is represented in 0s and 1s)
+------------------------------------------------------------------------------------------------------------------------
+Q) Types of the java application
+-> by using java we can develop or there are three types of application in java standalone application, web application, enterprise application
+    # Standalone application =>
+    -> standalone application are also called as desktop application
+    -> the application which are run on the operating system without internet is called standalone application
+    -> We can develop standalone application by using JSE ( java standard edition => core java) + AWT /Swing or Javafx
+    -> Example. notepad,word
+
+    # web application =>
+    ->  the application which are run at web server by using internet user can access this application is called web application
+    ->  we can develop web application by using JEE ( java enterprise edition => advance java)+JDBC /Servlet/JSP/Spring MVC
+    ->  Example. fb,youtube,email
+
+     # Enterprise application =>
+    ->  The application which are developed for corporate sides by using internet user can access this application is called enterprise application
+    ->  we can develop enterprise application by using JSE ( java standard edition => core java)+JEE ( java enterprise edition => advance java)+Spring framework web services
+    ->  Example. fb,youtube,email
+------------------------------------------------------------------------------------------------------------------------
+Q what is command prompt
+-> it is a software by using this we give the command to operating system to perform specific task
+
+Q what is path
+-> it is an exact location where file is present
+
+Q what is java path
+-> it is the location of the java executable files
+
+Q why we need java path and when
+-> we need java path to tell the operating system where java executable file are present
+-> we need java path When we execute the java program by using command prompt
+
+Q how we can set java path
+-> go to environment variable
+-> then in system variable go inside the path and click on edit
+-> then paste the complete path of jdk (C://Program files/ Java / JDK / bin)
+
+Q Can we create an empty java file, compile & execute it?
+   1. We can create the empty java file
+   2. we can compile the empty java file but no .class file will be generated
+   3. since there is no .class generated we cannot run that
+
+Q Can we create an empty class, can we compile & execute it?
+   1. We can create empty class
+   2. We can compile empty class and .class file will be generated
+   3. We cannot run that because main method is required to start the execution
+
+Q Is the main method mandatory for compilation or for execution?
+      1. we can compile the java file without main method
+      2. but for execution main method is compulsory.
+
+Q Is it mandatory that the java file name & class name should be the same?
+      1. **No**
+      2. we can have class name and java file name different but the condition is class should not be public
+
+Q When should a Java file name and class name be the same?
+      When a class defined as a public then java file name and class name must be same.
+
+Q Why should java file name & public class name be the same?
+      because we tell the jvm this is the entry point of the program
+
+Q What is the entry point of java class execution?
+      main method
+
+Q In a single java file, how many classes can we define?
+      1. We can write any number of classes in a single java file.
+      2. But, in a single java file there can be only one public class.
+     As a best practices, we should only one class in a single file.
+
+Q If a java file has multiple classes, what is the java file name?
+      1. if the java file contains one public class then file name must be same as of that public class.
+      2. if the java filed does not contain any public class then java file name can be anything
+
+Q In a single java file, how many public classes can we define?
+      Only one
+
+Q If a java source file has multiple classes, how many .class files are generated by the compiler?
+      For every class, there will be separate .class file will be generated.
+
+Q Can we compile multiple classes at a time?
+      Yes.
+
+Q Can we execute multiple classes at a time?
+      No
+------------------------------------------------------------------------------------------------------------------------
