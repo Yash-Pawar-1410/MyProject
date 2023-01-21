@@ -30,7 +30,7 @@ public class StarPrint {
 
      */
 
-
+        int row=8;
 
 
     }
