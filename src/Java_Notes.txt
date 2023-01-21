@@ -55,7 +55,7 @@ Q What is java
 -> java is the class based object-oriented high level programming language
         # object-oriented because we can write everything inside the class and object
         # high level programming language because it is easy to understand for java developers
--> by using java we can develop application software like standalone application, web application, enterprise application
+-> by using java we can develop application software like standalone application, web application, enterprise application, mobile application
 ------------------------------------------------------------------------------------------------------------------------
 Q java feature
 1) Simple
@@ -117,6 +117,20 @@ Q Java 7 features
 -> caching multiple exceptions by single catch
 -> binary literals (it is a number that is represented in 0s and 1s)
 ------------------------------------------------------------------------------------------------------------------------
+Q Java editions
+    # Java SE (java standard edition)
+    -> JSE also known as base edition or core java
+    -> by using this we can develop desktop/standalone application
+
+    # Java EE (java standard edition)
+    -> JEE is also known as advance edition or advance java
+    -> it is used to develop web-based, messaging, distributed, and enterprise applications
+
+    # Java ME (java micro edition)
+    -> JME is also known as mobile edition or android edition
+    -> This edition is used to develop applications for mobile devices, such as cell phones.
+    ->It is also used to develop Personnel Digital Assistants, Setup Box, and printers applications.
+------------------------------------------------------------------------------------------------------------------------
 Q) Types of the java application
 -> by using java we can develop or there are three types of application in java standalone application, web application, enterprise application
     # Standalone application =>
@@ -134,6 +148,10 @@ Q) Types of the java application
     ->  The application which are developed for corporate sides by using internet user can access this application is called enterprise application
     ->  we can develop enterprise application by using JSE ( java standard edition => core java)+JEE ( java enterprise edition => advance java)+Spring framework web services
     ->  Example. fb,youtube,email
+
+     # mobile application =>
+     -> the application which are run on mobile phones is called mobile application
+     -> we can develop mobile application by using JME (java micro edition)
 ------------------------------------------------------------------------------------------------------------------------
 Q what is command prompt
 -> it is a software by using this we give the command to operating system to perform specific task
@@ -201,3 +219,76 @@ Q Can we compile multiple classes at a time?
 Q Can we execute multiple classes at a time?
       No
 ------------------------------------------------------------------------------------------------------------------------
+Q JDK, JRE, JVM
+    # JDK [java development kit]
+    -> it is used to write java programs by developer
+    -> jdk contain java compiler, debugger,some libraries and JRE (JRE contain JVM)
+
+    # JRE [java runtime environment]
+    -> it is used to execute the java program not to develop
+    -> it is used by client
+    -> jdk contain JVM, java APIs [application programming interface] and Class Loader, Bytecode verifier
+
+     # JVM [java virtual machine]
+     -> it used to convert byte code into binary language
+     -> it contain JIT [just in time],interpreter
+
+**************************** JDK, JRE, JVM ARE PLATFORM DEPENDENT ****************************
+
+Q what is compiler
+-> Java compiler is a program that is implemented in C and C++ with the name javac.exe.
+   javac is short for java compiler. It is platform-independent.
+   It is responsible for the following tasks that are as follows:
+
+   a) Java compiler checks the syntaxial error (Syntax error).
+   b) It converts source code into byte code with the help of Java Virtual Machine (JVM).
+      Bytecode is just like machine code, but it is not for a specific processor or platform. It cannot be directly executed.
+   c) Java compiler also adds the additional code to your program if required.
+
+   Note: C or C++ programs are compiled only once. But when we execute Java programs, every time Java bytecode is translated.
+   Therefore, Java programs run a little slower than C/C++ programs.
+
+Q what is interpreter
+-> Java interpreter is a program that is implemented in C and C++ with the name java.exe. It is platform-dependent.
+   It is responsible for the following tasks. They are as follows:
+
+   a) Java interpreter converts the byte code into the native code line by line.
+   b) It executes the program on your system.
+------------------------------------------------------------------------------------------------------------------------
+Q JVM architecture / program execution
+-> we save file with .java extension
+-> javac compile the file and convert it into .class file, in .class file byte code are present which is also called intermediate code
+-> then it goes inside the JRE
+-> JRE contain class loader where are classes are loaded
+-> then from class loader it goes inside byte code verifier in which byte code will be checked
+-> then it goes inside the JVM
+-> in JVM there are different memory component are present just like
+        => Heap memory area - instance variable and objects are stored
+        => stack memory area - local variable and method execution are stored
+        => class or method  area - static variable, class structure and methods are stored
+        => native method area - non java code are present
+        => native stack method area - non java code are present
+        => pc register - next execution stored
+-> then it goes inside the execution engine in which JIT and Interpreter are present which converts byte code into machine language/binary code
+
+                                                App.java
+                                                    |
+                                                App.class
+                                                    |
+                                                  [JRE]
+                                                class loader
+                                                    |
+                                             byte code verifier
+                                                    |
+                                                  [JVM]
+                   | Heap | Stack | Class or Method | Native method | Native stack method | PC Register |
+                                                    |
+                                              [Execution engine]
+                                             | Interpreter | JIT |
+                                                    |
+                                                binary code
+
+
+
+
+
