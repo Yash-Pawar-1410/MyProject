@@ -288,6 +288,191 @@ Q JVM architecture / program execution
                                                     |
                                                 binary code
 
+------------------------------------------------------------------------------------------------------------------------
+Q Structure of the java program
+    package statement
+    import statement
+    public class Hello {
+        public static void main(String[] args) {
+        }
+    }
+
+    -> package statement :
+        - these are optional.
+        - Maximum only one package statement is allowed.
+        - package statement must be the first line of the java file
+    -> import statement :
+        - These are optional.
+        - We can have any number of import statements after the package statement and before class declaration
+        - To import single class: import java.lang.System;
+        - To import multiple classes: import java.lang.*;
+        - By default java.lang package is imported.
+    -> class definition
+        - public : it is a keyword which means class are accessible throughout the application
+        - class : it is a keyword which is used to create a class [ Class : it is a pre-defined class]
+        - Hello : it is a class name
+        - Hello : it is a class name
+        - {} : body of the class
+        - we write everything inside the class if we try to write outside the class we get CTE
+    -> main method
+        - It is an entry point for the java application execution.
+        - It is called by JVM automatically.
+        - public : it is keyword or access specifier which means main method accessible throughout the application
+        - static : keyword which access the method without creating an object
+        - void : main method does not return anything
+        - main : name of the main method
+        - (String[] args) : which is accept the input
+        - {} : body of the main method
+            - System : it is predefined system class
+            - out : static reference variable present inside System class of type PrintStream
+            - println : predefined method present in PrintStream class which is used to print something on the console.
+------------------------------------------------------------------------------------------------------------------------
+Q what is keyword
+-> keywords means it is a reserved/predefined words in java, so they can not be use as a variable or object or class name
+-> there are 53 keyword in java in which 2 keyword can not be used
+-> Date types [13]
+    - byte, short, int, long, float,
+    - double, char, boolean, null, void,
+    - true, false, enum
+-> file level [2]
+    - package, import
+-> control statement [11]
+    - if, else, switch, continue, break,
+    - return, default, case, while, for,
+    - do
+-> access specifier [18]
+    - public, private, protected, static, final,
+    - this, super, abstract, interface, class,
+    - extends, implements, synchronized, transient, volatile,
+    - new, instanceOf, native
+-> exception handling [5]
+    - try, catch, finally, throw, throws
+-> unused [2]
+    - goto, const
+-> unit [2]
+    - assert, strictfp
+------------------------------------------------------------------------------------------------------------------------
+Q Identifiers
+-> it is name given to a class, method, variable, packages
+    # Mandatory rules
+        1. Allowed set of characters : A-Z, a-z, 0-9, _[underscore], $ if we use any other character apart from this we will get CTE
+        2. class name, variable, method, package name must not start with digits
+        3. we must not use keywords or predefined symbols as identifier
+
+    # Suggestions or good coding practices
+        1. We should not use pre-defined class names as identifiers
+            - If we use there won't be any compile time issue and code will run fine
+            - If we use then code readability will reduce
+        2. class name should follow UpperCamel case
+            - In Class name, each word first character should be capital starting from first word
+
+                       class CustomerOrderDetails{
+
+                        }
+
+        3. variable, method, package should follow lowerCamel case
+            - In method, variable, package name, each word first character should be capital starting from second word onwards
+
+                        class CustomerOrderDetails{
+                        		void getCustomerOrderDetails(){
+
+                        	}
+                        }
+------------------------------------------------------------------------------------------------------------------------
+Q Variable
+-> it is a name given to  the memory location address
+        int age = 20;
+    - int : data type
+    - age : variable
+    - 20 : value that will be stored in location where age is point
+------------------------------------------------------------------------------------------------------------------------
+Q Data Types
+-> it specifies three things
+    - types of data that can hold inside the variable
+    - size of the memory requirement
+    - range of allowed values
+-> there are 2 types of data type
+    - primitive data types
+        byte    1 byte    : -128 to 127                                     default value is 0
+        short   2 bytes   : -32768 to 32767                                 default value is 0
+        int     4 byte    : -2147483648 to 2147483647                       default value is 0
+        long    8 bytes   : -9223372036854775808 to 9223372036854775807     default value is 0
+        float   4 bytes   : 1.4E-45 to 3.4028235E38                         default value is 0.0
+        double  8 bytes   : 4.9E-324to 1.7976931348623157E308               default value is 0.0
+        char    2 bytes                                                     default value is single space
+        boolean 1 bytes                                                     default value is false
+    - non primitive data type
+        array, tree
+-> datatype results
+        operand1                                         operation        operand2                                      result
+        byte, short, int, char                           +,-, *, /, %     byte, short, int, char                        int
+        byte, short, int, char, long                     +,-, *, /, %     byte, short, int, char, long                  long
+        byte, short, int, char ,long, float              +,-, *, /, %     byte, short, int, char ,long, float           float
+        byte, short, int, char ,long, float, double      +,-, *, /, %     byte, short, int, char ,long, float, double   double
+------------------------------------------------------------------------------------------------------------------------
+Q Type Casting
+-> type casting can be done for primitive as well as non primitive
+-> converting from one data type value into another data type value is called type casting
+    # Explicit type casting (upcasting, narrowing)
+        -> converting bigger data type value into smaller data type value is called explicit type casting
+        -> we tell to compiler we are fine with the data loss
+        -> developer is responsible for explicit type casting
+                int intValue = 100;
+                byte byteValue = (byte) intValue;
+
+     # Implicit type casting ( down-casting, widing)
+            -> converting smaller data type value into bigger data type value is called implicit type casting
+            -> there won't be any data loss
+            -> java compiler is responsible for implicit type casting
+                 byte byteValue = 100;
+                 int intValue = byteValue;
+
+# Autoboxing : converting primitive into non-primitive object
+# Unboxing : converting non-primitive object into primitive
+------------------------------------------------------------------------------------------------------------------------
+Q Operators
+-> Arithmetic Operators
+       1. +, -, *, /, %
+       2. Arithmetic operators are not applicable for boolean data type
+       3. These are applicable : byte, short, int, long, float, double, char [ integer ]
+       4. if we divide by zero  or take modulo to the number of type [byte, short, int, long, char] we get ArithmeticException divide by zero
+                System.out.println(5 / 0);
+                System.out.println(5 % 0);
+       5. if we divide [float , double ] by zero  to the number of type  we get Infinity
+                System.out.println(10.5 / 0);
+       6. if we modulo [float , double ] by zero  to the number of type we get NaN[Not a Number]
+                 System.out.println(11.6 % 0);
+       7. Expression evaluation will be from left to right and will follow BODMAS[ Brackets, Division Multiplication, Addition, subtraction]
+
+-> String concatenation operator
+       1. + is the only operator which does two things [+ operator is overloaded in java]
+          - mathematical addition
+              1. will happen when both the operands left and right are of number type
+                   System.out.println(5 + 2); = 7
+          - string concatenation
+              1. will happen when one of the operand is of type string
+                     System.out.println("hello" + 12); = hello12
+
+-> Assignment operator =
+       1. It is used to assign the right-hand side value to the left hand side variable.
+       2. right side value can be
+           - direct value [ int number = 20;]
+           - expression [int number = 10 * 30;]
+           - variable [int number1 = number2; ]
+           - function call [int number = add(); ]
+       3. left hand side must be variable [ 10=10; // CTE ]
+
+-> Relational Operators/ Comparison operators
+       1. > , <, ≥, ≤, ==, ! =
+       2. both the operands should be of same data type
+       3. output of relational operators will be of boolean
+       4. > , <, ≥, ≤, ==, ! = are applicable on integers
+                 System.out.println(true > true); //CTE
+       5. == and ! =  are applicable for boolean
+
+
+
+
 
 
 
