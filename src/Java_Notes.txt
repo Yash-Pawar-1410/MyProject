@@ -36,6 +36,7 @@ Q What is software and their types
 Q Introduction of the java
 -> james gosling is father of the java
 -> originally java developed by sun micro-system in 1991 and first version release in 1995
+-> currently java handle by oracle
 -> initial name of the java is OAK
 -> there are no abbreviation ( short name) of java
 -> slogan of the java is WORA (write once run anywhere)
@@ -55,7 +56,7 @@ Q What is java
 -> java is the class based object-oriented high level programming language
         # object-oriented because we can write everything inside the class and object
         # high level programming language because it is easy to understand for java developers
--> by using java we can develop application software like standalone application, web application, enterprise application, mobile application
+-> by using java we can develop application software like standalone application, web application, enterprise application, mobile application [ system software]
 ------------------------------------------------------------------------------------------------------------------------
 Q java feature
 1) Simple
@@ -140,7 +141,7 @@ Q) Types of the java application
     -> Example. notepad,word
 
     # web application =>
-    ->  the application which are run at web server by using internet user can access this application is called web application
+     ->  the application which are run at web server by using internet user can access this application is called web application
     ->  we can develop web application by using JEE ( java enterprise edition => advance java)+JDBC /Servlet/JSP/Spring MVC
     ->  Example. fb,youtube,email
 
