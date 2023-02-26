@@ -29,7 +29,7 @@ public class UserInput {
         System.out.println("enter course fees");
         int course_fees=sc.nextInt();
 
-        String insertQueries="insert into TheCourses (id,course_name,course_duration,course_fees)" +
+        String insertQueries="insert into TheCourses (id,name,duration,fees)" +
                 "  values('"+id+"','"+course_name+"','"+course_duration+"','"+course_fees+"')";
         int executeUpdate=statement.executeUpdate(insertQueries);
         System.out.println("inserted "+executeUpdate);

@@ -141,7 +141,7 @@ Q) Types of the java application
     -> Example. notepad,word
 
     # web application =>
-     ->  the application which are run at web server by using internet user can access this application is called web application
+      ->  the application which are run at web server by using internet user can access this application is called web application
     ->  we can develop web application by using JEE ( java enterprise edition => advance java)+JDBC /Servlet/JSP/Spring MVC
     ->  Example. fb,youtube,email
 
